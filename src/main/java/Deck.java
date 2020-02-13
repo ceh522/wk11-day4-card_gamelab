@@ -22,7 +22,11 @@ public class Deck {
     }
 
     public Card dealFirstCard() {
-        return this.cards.get(0);
+        Card cardDealt = this.cards.get(0);
+        this.cards.remove(0);
+
+        return cardDealt;
+
     }
 
     public int getCardArrayLength() {

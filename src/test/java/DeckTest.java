@@ -18,4 +18,10 @@ public class DeckTest {
         assertEquals(true, deck.dealFirstCard() instanceof Card);
     }
 
+    @Test
+    public void afterCardHasBeenDealtDeckHasOneLessCard(){
+        deck.dealFirstCard();
+        assertEquals(51, deck.getCardArrayLength());
+    }
+
 }

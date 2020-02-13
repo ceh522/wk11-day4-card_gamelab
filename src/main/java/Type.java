@@ -1,5 +1,3 @@
-import sun.tools.tree.NewInstanceExpression;
-
 public enum Type {
     ACE(false),
     TWO(false),
